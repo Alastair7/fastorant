@@ -1,0 +1,6 @@
+@Fastorant.Host_HostAddress = http://localhost:5216
+
+GET {{Fastorant.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
