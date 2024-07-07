@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fastorant.Infrastructure\Fastorant.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

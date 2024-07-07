@@ -10,8 +10,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastorant.Infrastructure", "API\Fastorant.Infrastructure\Fastorant.Infrastructure.csproj", "{680E5BF4-207E-4500-838A-37E2AA23A9CA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastorant.Business", "API\Fastorant.Business\Fastorant.Business.csproj", "{1BEEC457-B458-4E1B-AB85-D547CD9B980D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{680E5BF4-207E-4500-838A-37E2AA23A9CA} = {680E5BF4-207E-4500-838A-37E2AA23A9CA}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastorant.Common", "API\Fastorant.Common\Fastorant.Common.csproj", "{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastorant.Common", "API\Fastorant.Common\Fastorant.Common.csproj", "{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
