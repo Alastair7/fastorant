@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastorant.Infrastructure", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fastorant.Business", "API\Fastorant.Business\Fastorant.Business.csproj", "{1BEEC457-B458-4E1B-AB85-D547CD9B980D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastorant.Common", "API\Fastorant.Common\Fastorant.Common.csproj", "{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{1BEEC457-B458-4E1B-AB85-D547CD9B980D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BEEC457-B458-4E1B-AB85-D547CD9B980D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BEEC457-B458-4E1B-AB85-D547CD9B980D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{680E5BF4-207E-4500-838A-37E2AA23A9CA} = {E560EC86-1109-4773-AEE2-F7910A0E8C75}
 		{1BEEC457-B458-4E1B-AB85-D547CD9B980D} = {E560EC86-1109-4773-AEE2-F7910A0E8C75}
+		{B44E92A8-CB32-40CF-B5C6-66BFFCAB2AAF} = {E560EC86-1109-4773-AEE2-F7910A0E8C75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22FB3665-852C-438B-AB36-5A6FB97B6D2E}
