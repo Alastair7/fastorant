@@ -8,7 +8,7 @@ public static class SqLiteConfig
     public static IServiceCollection AddFastorantDB(this IServiceCollection services) 
     {
         services.AddDbContext<FastorantContext>(
-            options => options.UseSqlite("Data Source=./fastorantDB.db"));
+            options => options.UseSqlite("Data Source=fastorantDB.db"));
 
         return services;
     }
