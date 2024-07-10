@@ -27,18 +27,7 @@ public class ProvinceController : ControllerBase
         var province = await _provinceBusiness.GetById(id);
 
         return province == null ? 
-            NotFound($"Province with ID: {id} not found.") 
-            : Ok(province);
-    }
-
-    [HttpGet("name/{name}")] // To differentiate from the other enpoint GetById.
-
-    public async Task<IActionResult> GetByName(string name)
-    {
-        var province = await _provinceBusiness.GetByName(name);
-
-        return province == null ?
-            NotFound($"Province with Name: {name} not found.")
+            NotFound($"Province with ID: {id} not found") 
             : Ok(province);
     }
 
