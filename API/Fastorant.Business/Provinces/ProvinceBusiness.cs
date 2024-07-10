@@ -34,4 +34,17 @@ public class ProvinceBusiness : IProvinceBusiness
 
         return result;
     }
+
+    public async Task<ProvinceDTO> GetByName(string provinceName)
+    {
+        var province = await _fastorantDB.Provinces.FirstOrDefaultAsync(p => p.Name == provinceName);
+
+        if (province == null)
+        {
+            return null;
+        }
+        var result = ProvinceDTO.From(province);
+
+        return result;
+    }
 }
