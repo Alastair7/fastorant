@@ -11,7 +11,7 @@ public class ProvinceBusiness : IProvinceBusiness
     public ProvinceBusiness(FastorantContext fastorantDB)
     {
         _fastorantDB = fastorantDB ?? throw new ArgumentException(nameof(fastorantDB));
-    }
+    } 
     public async Task<IEnumerable<ProvinceDTO>> GetAll()
     {
         var provinces = await _fastorantDB.Provinces.ToListAsync();
