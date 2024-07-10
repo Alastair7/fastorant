@@ -7,4 +7,6 @@ public interface IProvinceBusiness
     Task<IEnumerable<ProvinceDTO>> GetAll();
 
     Task<ProvinceDTO?> GetById(long provinceId);
+
+    Task<ProvinceDTO> GetByName(string name);
 }
