@@ -11,7 +11,7 @@ public class ProvinceBusiness : IProvinceBusiness
     public ProvinceBusiness(FastorantContext fastorantDB)
     {
         _fastorantDB = fastorantDB ?? throw new ArgumentException(nameof(fastorantDB));
-    } 
+    }
     public async Task<IEnumerable<ProvinceDTO>> GetAll()
     {
         var provinces = await _fastorantDB.Provinces.ToListAsync();
@@ -32,6 +32,19 @@ public class ProvinceBusiness : IProvinceBusiness
 
         var result = ProvinceDTO.From(province);
 
+        return result;
+    }
+
+    public async Task<ProvinceDTO> GetByName(string provinceName)
+    {
+        var province = await _fastorantDB.Provinces.FirstOrDefaultAsync(p =>  p.Name == provinceName);
+        if (province == null)
+        {
+            return null;
+
+        }
+
+        var result = ProvinceDTO.From(province);
         return result;
     }
 }

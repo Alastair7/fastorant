@@ -31,4 +31,15 @@ public class ProvinceController : ControllerBase
             : Ok(province);
     }
 
+    [HttpGet("name/{name}")]
+    public async Task<IActionResult> GetByName(string name)
+    {
+        var province = await _provinceBusiness.GetByName(name);
+
+        return province == null ?
+            NotFound($"Province with ID: {name} not found")
+            : Ok(province);
+    }
+
+
 }
